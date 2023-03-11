@@ -90,7 +90,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: #052e36;
 }
 
 .overlay-mf {
@@ -158,9 +158,9 @@ a:hover {
 }
 
 .line-mf {
-  width: 40px;
+  width: 50px;
   height: 5px;
-  background-color: #0078ff;
+  background-color: #ff0000;
   margin: 0 auto;
 }
 
@@ -179,8 +179,8 @@ a:hover {
   content: "";
   position: absolute;
   height: 3px;
-  background-color: #0078ff;
-  width: 100px;
+  background-color: #ff0000;
+  width: 30%;
   bottom: -12px;
 }
 
@@ -455,7 +455,7 @@ a:hover {
 .navbar-b.navbar-reduce .active > .nav-link:before,
 .navbar-b.navbar-reduce .nav-link.show:before,
 .navbar-b.navbar-reduce .nav-link.active:before {
-  width: 35px;
+  width: 50px;
 }
 
 .navbar-b.navbar-trans .nav-link:before {
@@ -481,11 +481,11 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+  color: #5353536d;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #0078ff;
+  background-color: #ff0000;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
@@ -496,11 +496,11 @@ a:hover {
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #0078ff;
+  color: #000000;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #0078ff;
+  color: #000000;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -709,7 +709,7 @@ a:hover {
 
 .service-box {
   background-color: #fff;
-  padding: 2.5rem 1.3rem;
+  padding: 1rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
 }
