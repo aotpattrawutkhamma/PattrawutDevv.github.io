@@ -1,613 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>PattrawutDev</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicons -->
-    
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+<head>
+  <meta charset="utf-8" />
+  <title>PattrawutDev</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Bootstrap CSS File -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Favicons -->
 
-    <!-- Libraries CSS Files -->
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- Main Stylesheet File -->
-    <link href="css/style.css" rel="stylesheet" />
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- =======================================================
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet" />
+
+  <!-- =======================================================
     Theme Name: DevFolio
     Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
-  </head>
+</head>
+<style>
+  .card-clickable {
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
 
-  <body id="page-top">
-    <!--/ Nav Star /-->
-    <nav
-      class="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
-      id="mainNav"
-    >
-      <div class="container">
-        <a class="navbar-brand js-scroll" href="#page-top">MyPortFolio</a>
-        <button
-          class="navbar-toggler collapsed"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarDefault"
-          aria-controls="navbarDefault"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div
-          class="navbar-collapse collapse justify-content-end"
-          id="navbarDefault"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link js-scroll active" href="#home">Home</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link js-scroll" href="#about">About</a>
-            </li>
+  .card-clickable:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+</style>
 
-            <li class="nav-item">
-              <a class="nav-link js-scroll " href="#work">Work</a>
-            </li>
+<body id="page-top">
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">MyPortFolio</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link js-scroll" href="#about">About</a>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link js-scroll" href="#startup">Start   up</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll" href="#fileresume">File PDF</a>
-            </li>
-          </ul>
-        </div>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle js-scroll" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Work
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="internship.html">Internship</a>
+              <a class="dropdown-item" href="workexp.html">Work Experience</a>
+
+
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#startup">Start up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#fileresume">File PDF</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!--/ Nav End /-->
+    </div>
+  </nav>
+  <!--/ Nav End /-->
 
-    <!--/ Intro Skew Star /-->
-    <div
-      id="home"
-      class="intro route bg-image"
-      style="background-image: url(img/myprofile.jpg)"
-    >
-      <div class="overlay-itro"></div>
-      <div class="intro-content display-table">
-        <div class="table-cell">
-          <div class="container">
-            <!--<p class="display-6 color-d">Hello, world!</p>-->
-            <h1 class="intro-title mb-4"></h1>
-            <p class="intro-subtitle">
-              <span class="text-slider-items">Pattrawut Khamma,Programmer !!!</span>
-              
-              <strong class="text-slider"></strong>
-            </p>
-            <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-          </div>
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(img/myprofile.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title mb-4"></h1>
+          <p class="intro-subtitle">
+            <span class="text-slider-items">Pattrawut Khamma,Programmer !!!</span>
+
+            <strong class="text-slider"></strong>
+          </p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
       </div>
     </div>
-    <!--/ Intro Skew End /-->
+  </div>
+  <!--/ Intro Skew End /-->
 
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img text-center">
-                        <img
-                          src="img/profile.jpg"
-                          class="img-fluid rounded b-shadow-a"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div class="col-sm-8 col-md-9">
-                      <div class="about-info">
-                        <p>
-                          <span class="title-s">ชื่อ: </span>
-                          <span>ภัทราวุธ คำมา</span>
-                        </p>
-
-                        <p>
-                          <span class="title-s">อีเมล: </span>
-                          <span>Pattrawut_khamma@hotmail.com</span>
-                        </p>
-                        <p>
-                          <span class="title-s">เบอร์โทรศัพท์: </span>
-                          <span>092-971-2487</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s text-center ">Skill</p>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-12 col-sm-4">
-                          <p><img src="img/R.png" width="50px" /> HTML</p>
-                        </div>
-                        <div class="col-12 col-sm-4">
-                          <p><img src="img/iconLang/sk2.png" width="50px" /> Flutter</p>
-                        </div>
-                        <div class="col-12 col-sm-4">
-                          <p><img src="img/iconLang/sk3.png" width="50px" /> OOP</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-12 col-sm-4">
-                          <p><img src="img/iconLang/sk4.png" width="50px" /> GitHub</p>
-                        </div>
-                        <div class="col-12 col-sm-4">
-                          <p><img src="img/iconLang/sk5.png" width="50px" /> Unity</p>
-                        </div>
-                        <div class="col-12 col-sm-4">
-                          <p><img src="img/iconLang/cu.png" width="50px" /> C#  UNITY</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-12 col-sm-4">
-                          <p><img src="img/iconLang/sk7.png" width="50px" /> REACT</p>
-                        </div>
-                        <div class="col-12 col-sm-4">
-                          <p><img src="img/iconLang/pm.png" width="50px" /> PostMan</p>
-                        </div>
-                        <div class="col-12 col-sm-4">
-                          <p><img src="img/iconLang/sk9.png" width="50px" />TailwindCSS</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">About me</h5>
-                    </div>
-                    <p class="lead">
-                      ผม นายภัทราวุธ คำมา หรือเรียกผมสั้นๆว่า โอ๊ต 
-                    </p>
-                    <p class="lead">
-                      ผมกำลังมองหา งานที่สามารถเพิ่มประสบการณ์ ในการเพิ่มความสามารถของผม ไม่ว่าจะเป็น Mobile Appication , Web 
-                      หรือสิ่งอื่นๆ ที่สามารถนำไปต่อยอดความสามารถของผมได้
-                    
-                    </p>
-                    <p class="lead">
-                      ในส่วนของการทำงานของผมจะอยู่ในช่วงฝึกงาน ใน ปี 
-                      มิถุนายน 2565 - มีนาคม 2566 และผมจบการศึกษาจาก
-                      มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ กรุงเทพ คณะ ครุศาสตร์อุตสาหกรรม
-                      สาขา คอมพิวเตอร์ศึกษา
-                    </p>
-                  </div>
-                 <div id="fileresume" class="row justify-content-between m-lg-3"> 
-                   <a href="pdf/resume.pdf" target="_blank" class="btn btn-primary" download>ดาวน์โหลดไฟล์ Resume</a>
-                   <a href="pdf/Transcript.pdf" target="_blank" class="btn btn-primary" download>ดาวน์โหลดไฟล์ Transcript</a></div>
-                 
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-      </div>
-    </section>
-    
-    
-    <!-- Slide -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">Work Experience</h3>
-              <hr
-              style="
-                height: 5px;
-                width: 200px;
-                background-color: red;
-                border: none;
-              "
-            />
-              <p class="subtitle-a">ประสบการณ์ทางด้าน Mobile Application</p>
-            
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="row">
-            
-            <div class="col-md-4">
-              <div class="service-box shadow-lg">
-                <div class="work-box">
-                  <a href="img/mobile/mo1.png" data-lightbox="gallery-mf">
-                    <div class="work-img">
-                      <img src="img/mobile/mo1.png" alt="" class="img-fluid" />
-                    </div>
-                  </a>
-                </div>
-              
-                <div class="service-content">
-                  <h2 class="s-title">Mobile Application WareHouse</h2>
-                  <p class="s-description text-center">
-            
-                    <section> - Rest Api</section>
-                    <section> - โครง Ui Mobile</section>
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-4">
-              <div class="service-box shadow-lg">
-                <div class="work-box">
-                  <a href="img/mobile/mo2.png" data-lightbox="gallery-mf">
-                    <div class="work-img">
-                      <img src="img/mobile/mo2.png" alt="" class="img-fluid" />
-                    </div>
-                  </a>
-                </div>
-            
-                <div class="service-content">
-                  <h2 class="s-title">Mobile Application 
-                    <section>C89</section></h2>
-                  <p class="s-description text-center">
-                   
-                    <section>- โครงสร้าง Ui Application</section>
-                    <section>- Rest APi</section>
-                    
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="service-box shadow-lg">
-                <div class="work-box">
-                  <a href="img/mobile/mo3.png" data-lightbox="gallery-mf">
-                    <div class="work-img">
-                      <img src="img/mobile/mo3.png" alt="" class="img-fluid" />
-                    </div>
-                  </a>
-                </div>
-            
-                <div class="service-content">
-                  <h2 class="s-title">Mobile Application Onxon</h2>
-                  <p class="s-description text-center">
-                      
-                    <section>- โครงสร้าง Ui Application</section>
-                    <section>- Rest APi</section>
-                  </p>
-                </div>
-              </div>
-            </div>  
-          </div>
-          
-          
-          <hr />
-          <!-- slide -->
-          <p class="subtitle-a text-center">ประสบการณ์ทางด้าน Website</p> 
-          <hr
-              style="
-                height: 5px;
-                width: 200px;
-                background-color: red;
-                border: none;
-              "
-            />
-            <br>
-          <div class="row-md-4">
-            <div id="work-carousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li
-                  data-target="#work-carousel"
-                  data-slide-to="0"
-                  class="active"
-                ></li>
-                <li data-target="#work-carousel" data-slide-to="1"></li>
-                <li data-target="#work-carousel" data-slide-to="2"></li>
-                <li data-target="#work-carousel" data-slide-to="3"></li>
-                <li data-target="#work-carousel" data-slide-to="4"></li>
-              </ol>
-
-              <!-- Slides -->
-              <div class="carousel-inner mx-auto border-5 shadow-lg">
-                <div class="carousel-item active ml-2">
-                  <img
-                    src="img/onxonweb/onxon1.png"
-                    alt=""
-                    class="img-fluid ml-5"
-                  />
-                </div>
-                <div class="carousel-item ml-2 align-items-center">
-                  <img
-                    src="img/onxonweb/onxon2.png"
-                    alt=""
-                    class="img-fluid ml-5"
-                  />
-                </div>
-                <div class="carousel-item ml-2">
-                  <img
-                    src="img/onxonweb/onxon3.png"
-                    alt=""
-                    class="img-fluid ml-5"
-                  />
-                </div>
-                <div class="carousel-item ml-2">
-                  <img
-                    src="img/onxonweb/onxon4.png"
-                    alt=""
-                    class="img-fluid ml-5"
-                  />
-                </div>
-                <div class="carousel-item ml-2">
-                  <img
-                    src="img/onxonweb/onxon5.png"
-                    alt=""
-                    class="img-fluid ml-5"
-                  />
-                </div>
-              </div>
-
-              <!-- Controls -->
-              <a
-                class="carousel-control-prev"
-                href="#work-carousel"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#work-carousel"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-            <br />
-            <!-- end slide -->
-            <div class="work-content bg-light border-5 rounded-lg rounded-top rounded-bottom shadow-lg w-100 ">
-            
-                <div class="col-sm-10">
-                  <br />
-                  <h2 class="w-title">Frontend Web รายละเอียดการทำงาน</h2>
-                  <section>
-                    - ปรับปรุงหน้า CSS ด้วย tailwind เพิ่มหน้า Notification และ
-                    Newnotification
-                  </section>
-                  <section>- เพิ่มไอคอนหน้าเปลี่ยนภาษา</section>
-                  <section>
-                    - สร้างหน้า Tracking และ Timeline Tracking ด้วย tailwind
-                  </section>
-                  <section>- ปรับปรุง Responsive ต่างๆ</section>
-                  <br />
-
-                  <div class="w-more">
-                    <span class="w-ctegory">Frontend Web</span> /
-                    <span class="w-date"
-                      >หมายเหตุ ในส่วนของ frontendWeb ทางผู้จัดทำได้ทำในส่วนของ
-                      Responsive และ ปรับปรุงหน้า Ui ตามแบบ Design</span
-                    >
-                  </div>
-                  <br />
-                </div>
-              
-            </div>
-          </div>
-        </div>  
-        
-    </section>
-    <!--  -->
-    
-    <!--สสส X RISE  -->
-
-    <section id="startup" class="container portfolio-mf sect-pt4 route">
-      <hr>
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">สสส x Rise</h3>
-            
-            <hr
-              style="
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img text-center">
+                      <img src="img/profile.jpg" class="img-fluid rounded b-shadow-a" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-sm-8 col-md-9">
+                    <div class="about-info">
+                      <p>
+                        <span class="title-s">ชื่อ: </span>
+                        <span>ภัทราวุธ คำมา</span>
+                      </p>
+
+                      <p>
+                        <span class="title-s">อีเมล: </span>
+                        <span>Pattrawut_khamma@hotmail.com</span>
+                      </p>
+                      <p>
+                        <span class="title-s">เบอร์โทรศัพท์: </span>
+                        <span>092-971-2487</span>
+                      </p>
+                      <div class="col-md-6">
+                        <a href="https://github.com/PattrawutKhammaAot" target="_blank">
+                          <div class="card mb-3 card-clickable">
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <i class="fab fa-github"></i> Github
+                                <i class="fas fa-chevron-right" style="float: right;"></i>
+                              </h5>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-mf">
+                  <p class="title-s text-center ">Skill</p>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 col-sm-4">
+                        <p><img src="img/iconLang/dart.png" width="50px" /> DART</p>
+                      </div>
+                      <div class="col-12 col-sm-4">
+                        <p><img src="img/iconLang/sk2.png" width="50px" /> Flutter</p>
+                      </div>
+                      <div class="col-12 col-sm-4">
+                        <p><img src="img/iconLang/sk3.png" width="50px" /> OOP</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 col-sm-4">
+                        <p><img src="img/iconLang/sk4.png" width="50px" /> GitHub</p>
+                      </div>
+                      <div class="col-12 col-sm-4">
+                        <p><img src="img/iconLang/sk5.png" width="50px" /> Unity</p>
+                      </div>
+                      <div class="col-12 col-sm-4">
+                        <p><img src="img/iconLang/cu.png" width="50px" /> C# UNITY</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 col-sm-4">
+                        <p><img src="img/iconLang/mssql.png" width="50px" /> MSSQL</p>
+                      </div>
+                      <div class="col-12 col-sm-4">
+                        <p><img src="img/iconLang/pm.png" width="50px" /> PostMan</p>
+                      </div>
+                      <div class="col-12 col-sm-4">
+                        <p><img src="img/iconLang/net.png" width="50px" />.Net</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">About me</h5>
+                  </div>
+                  <p class="lead">
+                    ผม นายภัทราวุธ คำมา หรือเรียกผมสั้นๆว่า โอ๊ต
+                  </p>
+                  <p class="lead">
+                    ผมกำลังมองหา งานที่สามารถเพิ่มประสบการณ์ ในการเพิ่มความสามารถของผม ไม่ว่าจะเป็น Mobile Appication ,
+                    Web
+                    หรือสิ่งอื่นๆ ที่สามารถนำไปต่อยอดความสามารถของผมได้
+
+                  </p>
+                  <p class="lead">
+                    ในส่วนของการทำงานของผมจะอยู่ในช่วงฝึกงาน ใน ปี
+                    มิถุนายน 2565 - มีนาคม 2566 และผมจบการศึกษาจาก
+                    มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ กรุงเทพ คณะ ครุศาสตร์อุตสาหกรรม
+                    สาขา คอมพิวเตอร์ศึกษา
+                  </p>
+                  <p class="lead">
+                    ปัจจุบัน
+                  </p>
+                  <p>
+                    ทำงานในตำแหน่ง Programmer บริษัท โอจีเอ อินเตอร์เนชั่นแนล จำกัด
+                  </p>
+
+                </div>
+                <div id="fileresume" class="row justify-content-between m-lg-3">
+                  <a href="pdf/resume.pdf" target="_blank" class="btn btn-primary" download>ดาวน์โหลดไฟล์ Resume</a>
+                  <a href="pdf/Transcript.pdf" target="_blank" class="btn btn-primary" download>ดาวน์โหลดไฟล์
+                    Transcript</a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!--สสส X RISE  -->
+
+  <section id="startup" class="container portfolio-mf sect-pt4 route">
+    <hr>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-box text-center">
+          <h3 class="title-a">สสส x Rise</h3>
+
+          <hr style="
                 height: 5px;
                 width: 200px;
                 background-color: red;
                 border: none;
-              "
-            />
-            <p class="subtitle-a">
-              โครงการ Prime Minister's Award for Health Promotion Innovation 2022
-            </p>
+              " />
+          <p class="subtitle-a">
+            โครงการ Prime Minister's Award for Health Promotion Innovation 2022
+          </p>
 
-            <section>
-              ในการแข่งขัน Startup ผู้เข้าแข่งขันได้เข้ารอบ 10 สุดท้าย
-            </section>
-          </div>
+          <section>
+            ในการแข่งขัน Startup ผู้เข้าแข่งขันได้เข้ารอบ 10 สุดท้าย
+          </section>
         </div>
       </div>
-      <div class="row container-fluid">
-        <div class="row-md-4"></div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/startup/s1.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/startup/s1.jpg" alt="" class="img-fluid" />
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/startup/s2.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/startup/s2.jpg" alt="" class="img-fluid" />
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/startup/s3.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/startup/s3.jpg" alt="" class="img-fluid" />
-              </div>
-            </a>
-          </div>
+    </div>
+    <div class="row container-fluid">
+      <div class="row-md-4"></div>
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="img/startup/s1.jpg" data-lightbox="gallery-mf">
+            <div class="work-img">
+              <img src="img/startup/s1.jpg" alt="" class="img-fluid" />
+            </div>
+          </a>
         </div>
       </div>
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="img/startup/s2.jpg" data-lightbox="gallery-mf">
+            <div class="work-img">
+              <img src="img/startup/s2.jpg" alt="" class="img-fluid" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="img/startup/s3.jpg" data-lightbox="gallery-mf">
+            <div class="work-img">
+              <img src="img/startup/s3.jpg" alt="" class="img-fluid" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
 
-      <div class="row container-fluid">
-        <div class="row-md-4"></div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/startup/s4.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/startup/s4.jpg" alt="" class="img-fluid" />
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/startup/s5.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/startup/s5.jpg" alt="" class="img-fluid" />
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/startup/s6.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/startup/s6.jpg" alt="" class="img-fluid" />
-              </div>
-            </a>
-          </div>
+    <div class="row container-fluid">
+      <div class="row-md-4"></div>
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="img/startup/s4.jpg" data-lightbox="gallery-mf">
+            <div class="work-img">
+              <img src="img/startup/s4.jpg" alt="" class="img-fluid" />
+            </div>
+          </a>
         </div>
       </div>
-      <div class="row container-fluid">
-        <div class="row-md-4"></div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/startup/s7.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/startup/s7.jpg" alt="" class="img-fluid" />
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/startup/s8.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/startup/s8.jpg" alt="" class="img-fluid" />
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/startup/s9.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/startup/s9.jpg" alt="" class="img-fluid" />
-              </div>
-            </a>
-          </div>
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="img/startup/s5.jpg" data-lightbox="gallery-mf">
+            <div class="work-img">
+              <img src="img/startup/s5.jpg" alt="" class="img-fluid" />
+            </div>
+          </a>
         </div>
       </div>
-    </section>
-    <!-- สสส X Rise -->
-    <!--/ Section Portfolio End /-->
-    
-    <section
-      class="paralax-mf footer-paralax bg-image sect-mt4 route"
-      style="background-image: url(img/overlay-bg.jpg)"
-    >
-      <div class="overlay-mf"></div>
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="img/startup/s6.jpg" data-lightbox="gallery-mf">
+            <div class="work-img">
+              <img src="img/startup/s6.jpg" alt="" class="img-fluid" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row container-fluid">
+      <div class="row-md-4"></div>
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="img/startup/s7.jpg" data-lightbox="gallery-mf">
+            <div class="work-img">
+              <img src="img/startup/s7.jpg" alt="" class="img-fluid" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="img/startup/s8.jpg" data-lightbox="gallery-mf">
+            <div class="work-img">
+              <img src="img/startup/s8.jpg" alt="" class="img-fluid" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="img/startup/s9.jpg" data-lightbox="gallery-mf">
+            <div class="work-img">
+              <img src="img/startup/s9.jpg" alt="" class="img-fluid" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- สสส X Rise -->
+  <!--/ Section Portfolio End /-->
 
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="copyright-box">
-                <p class="copyright">
-                  &copy; Copyright <strong>Aot pattrawut</strong> All Rights
-                  Reserved
-                </p>
-                <div class="credits">
-                  <!--
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">
+                &copy; Copyright <strong>Aot pattrawut</strong> All Rights
+                Reserved
+              </p>
+              <div class="credits">
+                <!--
                   All the links in the footer should remain intact.
                   You can delete the links only if you purchased the pro version.
                   Licensing information: https://bootstrapmade.com/license/
                   Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
                 -->
-                
-                </div>
+
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </section>
-    <!--/ Section Contact-footer End /-->
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
 
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
 
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/popper/popper.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/counterup/jquery.waypoints.min.js"></script>
-    <script src="lib/counterup/jquery.counterup.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
 
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
