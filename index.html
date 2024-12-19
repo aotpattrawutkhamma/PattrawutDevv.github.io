@@ -43,6 +43,15 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 </style>
+<style>
+  @media (max-width: 767px) {
+    .dropdown-menu {
+      display: block;
+      position: static;
+      float: none;
+    }
+  }
+</style>
 
 <body id="page-top">
   <!--/ Nav Star /-->
@@ -64,19 +73,16 @@
             <a class="nav-link js-scroll" href="#about">About</a>
           </li>
 
-          <li class="nav-item dropdown ">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle js-scroll" href="#" id="navbarDropdown" role="button"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Work
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="internship.html">Internship</a>
-              <a class="dropdown-item" href="workexp.html">Work Experience</a>
-
-
+              <a class="dropdown-item" href="internship.html" onclick="event.stopPropagation();">Internship</a>
+              <a class="dropdown-item" href="workexp.html" onclick="event.stopPropagation();">Work Experience</a>
             </div>
           </li>
-
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#startup">Start up</a>
           </li>
